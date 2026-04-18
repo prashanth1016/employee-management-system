@@ -11,6 +11,9 @@ from routes.task_routes import router as task_router
 from routes.request_routes import router as req_router
 from routes.leave_routes import router as leave_router
 from routes import attendance_routes
+
+# backend/main.py
+from models import user, employee, task, request, document, leave, login_session
 Base.metadata.create_all(bind=engine)
 
 if not os.path.exists("uploads"):
